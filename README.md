@@ -5,7 +5,7 @@
 ## Команда
 
 - yarikTri — [yarikTri](https://github.com/yarikTri).
-- rbeketov — [rbeketov](https://github.com/rbeketov).
+- Бекетов Роман Александрович — [rbeketov](https://github.com/rbeketov).
 
 ## Продукт: TaskFlow
 
