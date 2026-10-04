@@ -1,0 +1,25 @@
+{
+  "observed_at_utc": "2026-10-04T10:28:51.822359+00:00",
+  "scope": "Public repository observation before pushing MVP/EK1; not a record of private or oral reviews.",
+  "remote_head_at_observation": "5e8961f",
+  "pre_mvp_commits": [
+    "7eedf3e",
+    "5e8961f"
+  ],
+  "baseline_commit": "39cfbe71e5960ef8c4b7637d769444d34c94d260",
+  "pull_requests": {
+    "url": "https://api.github.com/repos/rbeketov/rbpo-yavkaib/pulls?state=all&per_page=100",
+    "returned_count": 0
+  },
+  "actions": {
+    "url": "https://api.github.com/repos/rbeketov/rbpo-yavkaib/actions/runs?per_page=100",
+    "total_count": 0
+  },
+  "not_observed": [
+    "Branch protection",
+    "Current collaborator invitation status",
+    "Independent partner reproduction",
+    "Private or oral discussion"
+  ],
+  "interpretation": "No preserved independent PR review in this sample; does not prove nobody reviewed code elsewhere."
+}

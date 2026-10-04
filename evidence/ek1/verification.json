@@ -1,0 +1,105 @@
+{
+  "generated_at_utc": "2026-10-04T10:40:27.812725+00:00",
+  "source_commit": "39cfbe71e5960ef8c4b7637d769444d34c94d260",
+  "python": "3.12.14",
+  "dependencies": {
+    "Django": "5.2.17",
+    "asgiref": "3.12.1",
+    "sqlparse": "0.6.0"
+  },
+  "scope": "Local automated MVP checks; not a vulnerability audit or independent human review.",
+  "source_sha256": {
+    "manage.py": "af7d1a8cfd59a58aa8d71545087268bdc707aad6fc9f0fd945f8d457c2882711",
+    "requirements.txt": "526ef78e635ce1f67afada15360b4b2228e495a4f3f6f9a8361526ae77d3ad44",
+    "scripts/bootstrap.py": "fb53e1278ef090747a57ec8398cfde195d5869f158c7af22c7d93515906be12b",
+    "scripts/verify.py": "bc5cc7ec5a573c11c301130c036daef5f69edd3791f3fe48d93982c630d60ce2",
+    "static/app.css": "51ac4140123793ac0a1fec4d9430ce88c9d12d9cafae9c4ef9bffcc576117f1c",
+    "taskflow/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "taskflow/settings.py": "b73ed00e4dc987abfe9eddad910d0f71e4e04741330f9a0d61a0a40f95b23ecc",
+    "taskflow/urls.py": "22821c888199207c45f01a4f85c6b137acea8a7bda5e41fd8e544881bf681fda",
+    "taskflow/wsgi.py": "4b4bb9b46c35ae11b5cec3585dfab7fe6b6875fce2a33a11817dbf674e1fa114",
+    "templates/403.html": "110e54ff60fc7ee8cbf9c8a02b410d6e9453443167f2a7d6644c1dc3851dfbdc",
+    "templates/404.html": "a31c37a4272223e0e664834545a0e69bb350f30860536f04bf44f0f0ee10de16",
+    "templates/base.html": "bfa324d2a4a39b4fddb7bc4255a9da739c812510a88dff65417b440a92bf66c3",
+    "templates/registration/login.html": "4af152c3a4e71ff19fc339ab4c1ab42bb73baccf80adfce74904976940655c1a",
+    "templates/tracker/confirm_delete.html": "2c89267df72d19b2a6f42e390ec2325f320f8d7621b5155176e3608a84f0ee21",
+    "templates/tracker/form.html": "78a602f82b5d82a252ea1b0556c60e5f168ad0bde68febcd7705e26afb91bf54",
+    "templates/tracker/members.html": "8f77e70962f571f295bc9f01ca0876dc8985350a162b2d15c4a0754b4a9184b5",
+    "templates/tracker/project_detail.html": "02d7724e5f6cd797b916ac443a3cd65173571e7acebbeb48858e23a16a5cdf6c",
+    "templates/tracker/project_list.html": "01a0f6538529b80642d66f85067cfaf4f95952f91cdd71ba780db2db46d972e0",
+    "templates/tracker/task_detail.html": "04d3da4fa5cdbac8c1a2f1d795bac24b2e4881db540ff4b2d9b2807a88043d68",
+    "tracker/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracker/forms.py": "2be3c19de418a06f5313039bb3bac492af53f04184d57806662a19191a719f68",
+    "tracker/management/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracker/management/commands/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracker/management/commands/seed_demo.py": "7b74f2502b825970e30d7fb2f0dafc9e2c84b4462105b8487b62e46280cec4ba",
+    "tracker/migrations/0001_initial.py": "82a622b4f5dccc59a2eacfc1a87ec62aaaefd6390d3e9d2c316de648ec9ea8a6",
+    "tracker/migrations/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracker/models.py": "f52767b612dd9ed14fbdd4895c17b2eae6ba0841bcea9ade836446b303e796a7",
+    "tracker/permissions.py": "722a2a57ddccc740b85aa2cc13c055698841600a2390cff224d8bb4d623b44e5",
+    "tracker/tests.py": "441e2dda6572eefea5f80db852630bccd8d630fc7dc0839705a6a25aeaebfc75",
+    "tracker/urls.py": "a9def3ae880cf22cd448f6faa89c2765cd280ffcf9d452c083ef75be12bd8794",
+    "tracker/views.py": "17a81bcb420a9d0eeb666c9145310f35b7af2550d1c959a3fbdec0d1b7fb550a"
+  },
+  "checks": [
+    {
+      "name": "dependency-consistency",
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "output": "No broken requirements found.\nWARNING: The directory '/Users/r.beketov/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+    },
+    {
+      "name": "django-system-check",
+      "command": [
+        "python",
+        "manage.py",
+        "check"
+      ],
+      "returncode": 0,
+      "output": "System check identified no issues (0 silenced).\n"
+    },
+    {
+      "name": "migration-consistency",
+      "command": [
+        "python",
+        "manage.py",
+        "makemigrations",
+        "--check",
+        "--dry-run"
+      ],
+      "returncode": 0,
+      "output": "No changes detected\n"
+    },
+    {
+      "name": "behavior-and-security-tests",
+      "command": [
+        "python",
+        "manage.py",
+        "test",
+        "--verbosity",
+        "2"
+      ],
+      "returncode": 0,
+      "output": "Found 27 test(s).\nOperations to perform:\n  Synchronize unmigrated apps: messages, staticfiles\n  Apply all migrations: auth, contenttypes, sessions, tracker\nSynchronizing apps without migrations:\n  Creating tables...\n    Running deferred SQL...\nRunning migrations:\n  Applying contenttypes.0001_initial... OK\n  Applying contenttypes.0002_remove_content_type_name... OK\n  Applying auth.0001_initial... OK\n  Applying auth.0002_alter_permission_name_max_length... OK\n  Applying auth.0003_alter_user_email_max_length... OK\n  Applying auth.0004_alter_user_username_opts... OK\n  Applying auth.0005_alter_user_last_login_null... OK\n  Applying auth.0006_require_contenttypes_0002... OK\n  Applying auth.0007_alter_validators_add_error_messages... OK\n  Applying auth.0008_alter_user_username_max_length... OK\n  Applying auth.0009_alter_user_last_name_max_length... OK\n  Applying auth.0010_alter_group_name_max_length... OK\n  Applying auth.0011_update_proxy_permissions... OK\n  Applying auth.0012_alter_user_first_name_max_length... OK\n  Applying sessions.0001_initial... OK\n  Applying tracker.0001_initial... OK\nSystem check identified no issues (0 silenced).\nCreating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...\ntest_anonymous_requests_do_not_read_or_mutate (tracker.tests.AuthorizationTests.test_anonymous_requests_do_not_read_or_mutate) ... ok\ntest_any_authenticated_user_can_create_owned_project (tracker.tests.AuthorizationTests.test_any_authenticated_user_can_create_owned_project) ... ok\ntest_comment_matrix_and_forged_author (tracker.tests.AuthorizationTests.test_comment_matrix_and_forged_author) ... ok\ntest_cross_project_object_ids_do_not_bypass_access (tracker.tests.AuthorizationTests.test_cross_project_object_ids_do_not_bypass_access) ... ok\ntest_delete_project_matrix (tracker.tests.AuthorizationTests.test_delete_project_matrix) ... ok\ntest_delete_task_matrix (tracker.tests.AuthorizationTests.test_delete_task_matrix) ... ok\ntest_empty_and_oversized_comment_rejected (tracker.tests.AuthorizationTests.test_empty_and_oversized_comment_rejected) ... ok\ntest_get_does_not_delete_or_comment_or_logout (tracker.tests.AuthorizationTests.test_get_does_not_delete_or_comment_or_logout) ... ok\ntest_invalid_and_oversized_task_inputs_leave_database_unchanged (tracker.tests.AuthorizationTests.test_invalid_and_oversized_task_inputs_leave_database_unchanged) ... ok\ntest_login_logout_and_external_redirect_rejected (tracker.tests.AuthorizationTests.test_login_logout_and_external_redirect_rejected) ... ok\ntest_members_management_matrix (tracker.tests.AuthorizationTests.test_members_management_matrix) ... ok\ntest_owner_is_immutable_and_cannot_be_granted_in_member_form (tracker.tests.AuthorizationTests.test_owner_is_immutable_and_cannot_be_granted_in_member_form) ... ok\ntest_read_matrix_and_project_list_isolation (tracker.tests.AuthorizationTests.test_read_matrix_and_project_list_isolation) ... ok\ntest_real_csrf_enforcement_rejects_mutation (tracker.tests.AuthorizationTests.test_real_csrf_enforcement_rejects_mutation) ... ok\ntest_remove_member_matrix (tracker.tests.AuthorizationTests.test_remove_member_matrix) ... ok\ntest_revoked_membership_takes_effect_on_next_request (tracker.tests.AuthorizationTests.test_revoked_membership_takes_effect_on_next_request) ... ok\ntest_role_change_takes_effect_without_new_login (tracker.tests.AuthorizationTests.test_role_change_takes_effect_without_new_login) ... ok\ntest_security_headers_on_authenticated_page (tracker.tests.AuthorizationTests.test_security_headers_on_authenticated_page) ... ok\ntest_stored_html_is_escaped_in_title_description_and_comment (tracker.tests.AuthorizationTests.test_stored_html_is_escaped_in_title_description_and_comment) ... ok\ntest_superuser_does_not_bypass_project_membership (tracker.tests.AuthorizationTests.test_superuser_does_not_bypass_project_membership) ... ok\ntest_task_create_matrix_and_forged_ownership (tracker.tests.AuthorizationTests.test_task_create_matrix_and_forged_ownership) ... ok\ntest_task_update_matrix (tracker.tests.AuthorizationTests.test_task_update_matrix) ... ok\ntest_unknown_user_and_inactive_member_rejected (tracker.tests.AuthorizationTests.test_unknown_user_and_inactive_member_rejected) ... ok\ntest_valid_csrf_form_can_create_task (tracker.tests.AuthorizationTests.test_valid_csrf_form_can_create_task) ... ok\ntest_viewer_has_no_write_buttons (tracker.tests.AuthorizationTests.test_viewer_has_no_write_buttons) ... ok\ntest_seed_is_repeatable_and_preserves_existing_passwords (tracker.tests.DemoCommandTests.test_seed_is_repeatable_and_preserves_existing_passwords) ... ok\ntest_seed_refuses_non_debug_environment (tracker.tests.DemoCommandTests.test_seed_refuses_non_debug_environment) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 0.879s\n\nOK\nDestroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...\n"
+    },
+    {
+      "name": "non-debug-configuration-check",
+      "command": [
+        "python",
+        "manage.py",
+        "check",
+        "--deploy",
+        "--fail-level",
+        "WARNING"
+      ],
+      "returncode": 0,
+      "output": "System check identified no issues (0 silenced).\n"
+    }
+  ],
+  "passed": true
+}
