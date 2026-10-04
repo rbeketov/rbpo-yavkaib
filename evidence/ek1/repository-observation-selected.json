@@ -1,0 +1,52 @@
+{
+  "observed_at_utc": "2026-10-04T13:33:18.660070+00:00",
+  "repository": "rbeketov/rbpo-yavkaib",
+  "scope": "Public API observation before final presentation/docs publication; not a branch-protection or private-discussion audit.",
+  "actions": {
+    "total_count": 4,
+    "runs": [
+      {
+        "id": 37204928216,
+        "head_sha": "543a30f35279afa18eb21c64eef0be743a1f15f5",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/rbeketov/rbpo-yavkaib/actions/runs/37204928216",
+        "created_at": "2026-10-04T13:14:48Z",
+        "updated_at": "2026-10-04T13:15:06Z"
+      },
+      {
+        "id": 37204550994,
+        "head_sha": "a9e6d112bed91fc16123d1e54048da7701c10834",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/rbeketov/rbpo-yavkaib/actions/runs/37204550994",
+        "created_at": "2026-10-04T13:08:22Z",
+        "updated_at": "2026-10-04T13:08:34Z"
+      },
+      {
+        "id": 37203646802,
+        "head_sha": "f718bf67de8bbff078b243013b49c3ee9d22fbb5",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/rbeketov/rbpo-yavkaib/actions/runs/37203646802",
+        "created_at": "2026-10-04T12:52:59Z",
+        "updated_at": "2026-10-04T12:53:19Z"
+      },
+      {
+        "id": 37196584464,
+        "head_sha": "47fb3bd0dd0fe97127dd547f7935758e59664615",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/rbeketov/rbpo-yavkaib/actions/runs/37196584464",
+        "created_at": "2026-10-04T10:48:55Z",
+        "updated_at": "2026-10-04T10:49:14Z"
+      }
+    ],
+    "query": "https://api.github.com/repos/rbeketov/rbpo-yavkaib/actions/runs?per_page=20"
+  },
+  "pull_requests": {
+    "count": 0,
+    "query": "https://api.github.com/repos/rbeketov/rbpo-yavkaib/pulls?state=all&per_page=100",
+    "items": []
+  }
+}

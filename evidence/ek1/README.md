@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | [verification.json](verification.json) | 5 команд успешны, 27 тестов с подслучаями; Python/пакеты, timestamp, baseline commit, SHA-256 исходников | Все возможные сценарии, CVE-аудит, production, человеческое review |
 | [repository-observation.json](repository-observation.json) | Ограниченная публичная выборка GitHub до публикации MVP/ЭК1; 0 PR и 0 Actions runs | Закрытые/устные обсуждения, более поздние CI runs, branch protection |
+| [repository-observation-selected.json](repository-observation-selected.json) | 4 успешных CI runs после добавления workflow и 0 PR, срез 04.10.2026 | Независимое review, branch protection, будущие изменения |
 | [taskflow-board.png](taskflow-board.png) | Доска с тремя статусами, владельцем и синтетическими задачами в браузере | Серверные запреты; для них нужны тесты и ответы сервера |
 
 Команда повторения отчёта из корня проекта после установки зависимостей:
