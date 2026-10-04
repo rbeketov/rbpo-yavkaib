@@ -1,0 +1,10 @@
+{% load static %}<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}TaskFlow{% endblock %}</title><link rel="stylesheet" href="{% static 'app.css' %}"></head>
+<body><a class="skip" href="#main">Перейти к содержимому</a>
+<header><a class="brand" href="{% url 'project_list' %}"><span class="brand-mark">T</span> TaskFlow</a>
+<span class="header-note">Задачи, над которыми работают вместе</span>
+{% if user.is_authenticated %}<div class="account"><span>{{ user.username }}</span><form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="button subtle" type="submit">Выйти</button></form></div>{% endif %}</header>
+<main id="main">{% if messages %}<div aria-live="polite">{% for message in messages %}<p class="notice">{{ message }}</p>{% endfor %}</div>{% endif %}
+{% block content %}{% endblock %}</main>
+<footer>TaskFlow · Команда «ЯвкаИБ» <span>Учебный MVP · Локальный запуск</span></footer></body></html>

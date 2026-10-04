@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block title %}Вход · TaskFlow{% endblock %}
+{% block content %}<div class="login-layout"><section><p class="eyebrow">МЕНЬШЕ ШУМА. БОЛЬШЕ ЯСНОСТИ.</p><h1>Одна команда.<br>Понятные задачи.</h1><p class="lead">Проекты, задачи и обсуждения — в одном месте.<br>Каждый видит то, к чему у него есть доступ.</p><div class="role-pills"><span class="badge owner">Владелец</span><span class="badge editor">Редактор</span><span class="badge viewer">Наблюдатель</span></div></section>
+<section class="panel login-panel"><h2>Войти в пространство</h2><p class="muted">Используйте свою учебную учётную запись приложения.</p>
+<form method="post">{% csrf_token %}{{ form.as_p }}{% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}<button class="button primary wide" type="submit">Войти</button></form></section></div>{% endblock %}

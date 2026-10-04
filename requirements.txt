@@ -1,0 +1,4 @@
+# Runtime lock for Python 3.12; installed from PyPI and tested as a set.
+Django==5.2.17
+asgiref==3.12.1
+sqlparse==0.6.0
